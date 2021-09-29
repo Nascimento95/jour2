@@ -35,14 +35,15 @@ console.log(total)
 // 06
 var sentence ="hello konexio!"
 var index =14
+var result = ""
 
 for (var i = 0 ; i < sentence.length; i++ ){
     index --;
     console.log(sentence.charAt(index))
    
 }
-var finish = sentence.charAt(index)
-console.log(finish)
+result = sentence.charAt(index)
+console.log(result)
 
 /* bonus
 var sentence ="hello konexio!"
@@ -72,4 +73,38 @@ for (x=1; x <= 100; x++){
           console.log(x)
           console.log("rien")
       }
+ }
+
+//  BONUS 02
+var total = 0 
+var limit = 10
+var i = 0
+while ( i  < limit){
+     i ++;
+     
+     total += i;
+     console.log(total)
+}
+// bonus 3
+var student = ["helene","evan","alain","eloa","jeremy","jong"]
+var min = 0
+var max = student.length - 1
+
+var studentRamdon = student[Math.floor(Math.random() * (max - min + 1) + min)];
+console.log(studentRamdon)
+
+// bonus 04
+var tab = []
+var limit = 20
+var max = 100
+
+for ( var i = 0 ; i <= limit ; i++){
+     var ramdonNumber =Math.floor(Math.random() * max)
+     tab.push(ramdonNumber)
+     console.log(tab)
+ }
+
+ for ( var i = tab.length ; i <= limit ; i++){
+     if ( tab.length > )
+     
  }
