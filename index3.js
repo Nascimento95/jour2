@@ -39,10 +39,10 @@ var result = ""
 
 for (var i = 0 ; i < sentence.length; i++ ){
     index --;
-    console.log(sentence.charAt(index))
-   
+    
+    result = result + sentence.charAt(index)
 }
-result = sentence.charAt(index)
+
 console.log(result)
 
 /* bonus
@@ -57,20 +57,18 @@ for (var i = 0 ; i < tab.length; i++ ){
 }*/
 
 // bonus 1
-for (x=1; x <= 100; x++){
-     if( x % 3 == 0 ){
-          console.log(x)
+for (var i=1; i <= 100; i++){
+     if(  i % 3 == 0  &&  i % 5 == 0 ){
+          console.log(i)
          console.log("fizz")
-     }
-     if( x % 5 == 0 ){
+     }else if( i % 5 == 0 ){
          console.log("buzz")
-     }
-     if( ( x % 3 == 0 ) && ( x % 5 == 0 ) ){
-          console.log(x)
+     }else if(  i % 3 == 0 ){
+          console.log(i)
           console.log("fizzbuzz")
      }
-     if( x % 7 == 0 ){
-          console.log(x)
+     if( i % 7 == 0 ){
+          console.log(i)
           console.log("rien")
       }
  }
@@ -81,7 +79,6 @@ var limit = 10
 var i = 0
 while ( i  < limit){
      i ++;
-     
      total += i;
      console.log(total)
 }
@@ -98,13 +95,16 @@ var tab = []
 var limit = 20
 var max = 100
 
+
 for ( var i = 0 ; i <= limit ; i++){
      var ramdonNumber =Math.floor(Math.random() * max)
      tab.push(ramdonNumber)
      console.log(tab)
  }
-
- for ( var i = tab.length ; i <= limit ; i++){
-     if ( tab.length > )
-     
- }
+ var numberMax = 0
+ for ( var i = 0 ; i < tab.length; i++){
+    
+     if (tab[i] > numberMax ){
+     numberMax = tab[i]
+     }
+     console.log(numberMax);
