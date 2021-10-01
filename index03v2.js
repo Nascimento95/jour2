@@ -80,22 +80,17 @@ for (var i=1 ; i <= limit7 ; i++){
 var limit8 = 8
 var factorielle1 = 1
 for (var i=1 ; i <= limit8 ; i++){
-    factorielle = i * factorielle1 ;
+    factorielle1 = i * factorielle1 ;
     
-    for(var j=1 ; j <= limit8 ; j++){
+    for(var j=1 ; j <= i ; j++){
 
     }
-    console.log(factorielle1);
+    console.log(`resulta factorielle ${i}! = ${factorielle1}`);
 }
-// 07
+// 07 /*
 console.log("------------- 08");
 //08 somme des carré 
-var table5 = 5 * 5
-var table6 = 6 * 6
-var table7 = 7 * 7
-var table8 = 8 * 8
-var table9 = 9 * 9 
-var table10 = 10 * 10
+
 var resultDeI = 0 
 
 
@@ -121,7 +116,7 @@ for ( var i = 100 ; i < 1000 ; i++){
     console.log(`${resultDe7}`);
 }
 console.log( "il y a ",`${resultDe7}` ," multiple de 7");
-
+console.log("exercice chance 10")
 // exo 10 
 var numberBig =0
 var min = 1 
@@ -129,9 +124,21 @@ var max = 6
 for ( var i = 0 ; i <= 20 ; i++){
     var aléa = Math.floor(Math.random() * (max - min + 1) + min)
     if ( aléa >= 5 ){
-        numberBig = aléa 
-        console.log("tout les resultat plus grand que 5 a chaque tour",`${numberBig}`)
+        numberBig += aléa 
+        console.log(`tout les resultat plus grand que 5 a chaque tour ${aléa}`,`${numberBig}`)
     }
     
 }
 console.log(" number stocker final",numberBig)
+console.log("exo boite 1");
+// boite 1 
+var box1 = 12;
+var box2 = 5;
+for (var i = 12; i < 14; i++) {
+    box1 = box2;
+    console.log(box1 + box2);
+    box2 = box1 + i;
+}
+console.log(box1);
+console.log(box2);
+console.log(i);
